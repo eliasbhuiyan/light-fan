@@ -5,43 +5,27 @@ import { StaticImage } from "gatsby-plugin-image"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Seo from '../components/seo'
 import { graphql } from "gatsby"
-import Slider from "react-slick";
+import Slider from "react-slick"; 
+import "slick-carousel/slick/slick.css";
+import Banner from '../components/banner'
+import Catagory from '../components/catagory'
+import Arrival from '../components/arrival'
+import Featured from '../components/featured'
+
+
+
 
 const IndexPage = ({data}) => {
-  const image = data.allFile.nodes;
 
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1
-  };
+
   return (
   
     <>
-    <Layout pageTitle="Home Page">
-     <section>
-      <div>
-        {
-          image.map((image, index)=>(
-            <GatsbyImage image={image.childImageSharp.gatsbyImageData} alt={index}/>
-          ))
-        }
-        <Slider {...settings}>
-          <div>
-            <h3>1</h3>
-          </div>
-          <div>
-            <h3>2</h3>
-          </div>
-          <div>
-            <h3>3</h3>
-          </div>
-        </Slider>
-      </div>
-     </section>
-      
+      <Layout pageTitle="Home Page">
+      <Banner data={data}/>
+      <Catagory/>
+      <Arrival/>
+      <Featured/>
     </Layout>
     </>
   )
