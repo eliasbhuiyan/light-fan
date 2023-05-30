@@ -59,7 +59,7 @@ const Layout = ({ pageTitle, children }) => {
        </header>
        <nav>
         <div className="container">
-            <ul className='flex justify-center gap-12 text-secondary font-normal text-lg py-9'>
+            <ul className='flex justify-center gap-12 text-secondary font-semibold text-lg py-9'>
                 <li><Link to='/'>Home</Link></li>
                 <li><Link to='/about'>About</Link></li>
                 <li><Link>Product</Link></li>

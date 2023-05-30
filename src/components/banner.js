@@ -41,7 +41,7 @@ const Banner = ({data}) => {
      <section>
       <div className="container">
       <Slider {...settings}>
-      {
+        {
           image.map((image, index)=>(
             <GatsbyImage image={image.childImageSharp.gatsbyImageData} alt={index}/>
           ))

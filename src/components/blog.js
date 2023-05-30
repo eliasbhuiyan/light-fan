@@ -2,13 +2,12 @@ import * as React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 
 
-const Arrival = () => {
+const Blog = () => {
   return (
     <section className='pb-40'>
         <div className="container">
            <div className='text-center mb-20'>
-             <h2 className='title pb-6'>New Arrival</h2>
-             <p className='peragraph w-[480px] m-auto'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. </p>
+             <h2 className='title pb-6'>Blog</h2>
            </div>
            <div className="flex gap-8">
             <div className='rounded-xl w-2/6'>
@@ -56,4 +55,4 @@ const Arrival = () => {
   )
 }
 
-export default Arrival
+export default Blog

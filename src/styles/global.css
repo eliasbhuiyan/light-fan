@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.title{
+    @apply text-3xl font-bold text-secondary pb-6
+}
+.peragraph{
+    @apply font-sans text-lg text-primary font-normal
+}
+.peragraph2{
+    @apply font-sans text-lg text-secondary font-normal
+}

@@ -11,6 +11,10 @@ import Banner from '../components/banner'
 import Catagory from '../components/catagory'
 import Arrival from '../components/arrival'
 import Featured from '../components/featured'
+import Collection from '../components/collection'
+import FlashSale from '../components/flashSale'
+import TopRated from '../components/topRated'
+import Blog from '../components/blog'
 
 
 
@@ -26,6 +30,10 @@ const IndexPage = ({data}) => {
       <Catagory/>
       <Arrival/>
       <Featured/>
+      <Collection/>
+      <FlashSale/>
+      <TopRated/>
+      <Blog/>
     </Layout>
     </>
   )
