@@ -10,13 +10,27 @@ const TopRated = () => {
         speed: 500,
         slidesToShow: 4,
         slidesToScroll: 1,
-        arrows: false
+        arrows: false,
+        dots: true,
+        appendDots: (dots) => (
+            <div>
+              <ul className='flex gap-2 absolute -top-12 right-0 cursor-pointer'>{dots}</ul>
+            </div>
+          ),
+          customPaging: i => (
+            <div
+             className='w-3 h-3 bg-secondary text-[0px] rounded-full'
+            >
+              {i + 1}
+            </div>
+          )
+      
       };
   return (
     <section className='pb-40'>
         <div className="container">
             <h2 className='title'>Top Rated Product</h2>
-            <div>
+            <div className='relative'>
                 <Slider {...settings} className='gap-8'>
                     <div className='rounded-xl px-4'>
                         <div className=' overflow-hidden rounded-t-xl'>

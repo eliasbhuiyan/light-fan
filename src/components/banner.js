@@ -26,7 +26,7 @@ function SamplePrevArrow(props) {
 }
 const Banner = ({data}) => {
   const image = data.allFile.nodes;
-
+  console.log(image,'==============================');
 
   const settings = {
     arrows: true,
@@ -42,8 +42,8 @@ const Banner = ({data}) => {
       <div className="container">
       <Slider {...settings}>
         {
-          image.map((image, index)=>(
-            <GatsbyImage image={image.childImageSharp.gatsbyImageData} alt={index}/>
+          image?.map((image, index)=>(
+            <GatsbyImage image={image.childImageSharp?.gatsbyImageData} alt={index}/>
           ))
           }          
         </Slider>

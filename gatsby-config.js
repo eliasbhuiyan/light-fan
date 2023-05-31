@@ -19,6 +19,13 @@ module.exports = {
         path: `${__dirname}/banner`,
       }
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `arrival`,
+        path: `${__dirname}/arrival`,
+      },
+    },
     "gatsby-plugin-mdx",
   ],
 }

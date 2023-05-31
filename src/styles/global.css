@@ -11,3 +11,6 @@
 .peragraph2{
     @apply font-sans text-lg text-secondary font-normal
 }
+.slick-dots ul .slick-active div{
+    @apply bg-brand
+}

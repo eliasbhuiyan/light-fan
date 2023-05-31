@@ -15,6 +15,7 @@ import Collection from '../components/collection'
 import FlashSale from '../components/flashSale'
 import TopRated from '../components/topRated'
 import Blog from '../components/blog'
+import Join from '../components/join'
 
 
 
@@ -34,6 +35,7 @@ const IndexPage = ({data}) => {
       <FlashSale/>
       <TopRated/>
       <Blog/>
+      <Join/>
     </Layout>
     </>
   )
