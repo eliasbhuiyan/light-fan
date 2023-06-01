@@ -17,15 +17,9 @@ import TopRated from '../components/topRated'
 import Blog from '../components/blog'
 import Join from '../components/join'
 
-
-
-
 const IndexPage = ({data}) => {
-
-
   return (
-  
-    <>
+      <>
       <Layout pageTitle="Home Page">
       <Banner data={data}/>
       <Catagory/>
