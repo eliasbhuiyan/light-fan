@@ -1,7 +1,5 @@
 import * as React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
-
-
 const Blog = () => {
   return (
     <section className='pb-40'>
