@@ -13,7 +13,6 @@ function SampleNextArrow(props) {
     ><MdKeyboardArrowRight/></div>
   );
 }
-
 function SamplePrevArrow(props) {
   const { className, style, onClick } = props;
   return (
