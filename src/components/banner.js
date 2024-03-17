@@ -25,9 +25,7 @@ function SamplePrevArrow(props) {
   );
 }
 const Banner = ({data}) => {
-  const image = data.allFile.nodes;
-  console.log(image,'==============================');
-
+  const image = data.allFile.nodes
   const settings = {
     arrows: true,
     infinite: true,
